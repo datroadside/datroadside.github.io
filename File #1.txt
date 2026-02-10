@@ -1,0 +1,181 @@
+File #1
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D.A.T Towing & Recovery | Towing & Roadside Assistance</title>
+  <meta name="description" content="D.A.T Towing & Recovery provides towing, roadside assistance, recovery, and transport services across Philadelphia County, Delaware County, Bucks, Montgomery, New Jersey, and Delaware." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">D.A.T</div>
+        <div class="brand__text">
+          <div class="brand__name">D.A.T Towing &amp; Recovery</div>
+          <div class="brand__tag">Towing • Recovery • Roadside Assistance</div>
+        </div>
+      </div>
+
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="mailto:OWTR2929@gmail.com">Email</a>
+        <a class="btn btn--primary" href="tel:2152000847">Call: (215) 200-0847</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1>Fast, professional towing &amp; roadside help.</h1>
+          <p>
+            Serving <strong>Philadelphia County</strong>, <strong>Delaware County</strong>,
+            <strong>Bucks</strong>, <strong>Montgomery</strong>, <strong>New Jersey</strong>, and
+            <strong>Delaware</strong>.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="tel:2152000847">Tap to Call Now</a>
+            <a class="btn btn--secondary" href="#quote">Request a Quote</a>
+          </div>
+
+          <ul class="badges">
+            <li>Insured</li>
+            <li>Local &amp; Reliable</li>
+            <li>Light &amp; Medium Duty</li>
+          </ul>
+        </div>
+
+        <div class="hero__card" role="region" aria-label="Business info">
+          <h2>Quick Info</h2>
+          <div class="info">
+            <div class="info__row">
+              <span class="info__label">Phone</span>
+              <a class="info__value" href="tel:2152000847">(215) 200-0847</a>
+            </div>
+            <div class="info__row">
+              <span class="info__label">Email</span>
+              <a class="info__value" href="mailto:OWTR2929@gmail.com">OWTR2929@gmail.com</a>
+            </div>
+            <div class="info__row">
+              <span class="info__label">Service Areas</span>
+              <span class="info__value">PA • NJ • DE</span>
+            </div>
+          </div>
+          <p class="fineprint">For fastest service, call with your location, vehicle type, and destination.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="wrap">
+        <h2>Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Towing</h3>
+            <p>Local &amp; long-distance towing for cars, SUVs, and light trucks.</p>
+          </article>
+          <article class="card">
+            <h3>Roadside Assistance</h3>
+            <p>Jump starts, lockouts, tire changes, and fuel delivery.</p>
+          </article>
+          <article class="card">
+            <h3>Recovery</h3>
+            <p>Accident recovery, winch-outs, and specialized situations.</p>
+          </article>
+          <article class="card">
+            <h3>Transport</h3>
+            <p>Vehicle transport for dealerships, auctions, and private customers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="section section--alt">
+      <div class="wrap">
+        <h2>Service Areas</h2>
+        <p class="muted">
+          Philadelphia County • Delaware County • Bucks County • Montgomery County • New Jersey • Delaware
+        </p>
+      </div>
+    </section>
+
+    <section id="quote" class="section">
+      <div class="wrap">
+        <h2>Request a Quote</h2>
+        <p class="muted">Choose text or email — both work instantly.</p>
+
+        <div class="cards cards--two">
+          <article class="card">
+            <h3>Text Us (Recommended)</h3>
+            <p class="muted">Opens your phone’s Messages app with the details pre-filled.</p>
+            <a class="btn btn--primary" id="smsLink" href="#">Text a Quote Request</a>
+          </article>
+
+          <article class="card">
+            <h3>Email Us</h3>
+            <p class="muted">Opens your email app with the details pre-filled.</p>
+            <a class="btn btn--secondary" id="emailLink" href="#">Email a Quote Request</a>
+          </article>
+        </div>
+
+        <div class="note">
+          <h3>What to include</h3>
+          <ul>
+            <li>Pickup location</li>
+            <li>Drop-off location (if towing)</li>
+            <li>Vehicle year/make/model</li>
+            <li>What service you need (tow, lockout, jump, winch-out)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <strong>D.A.T Towing &amp; Recovery</strong><br />
+        <span class="muted">Towing • Recovery • Roadside Assistance</span>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#areas">Areas</a>
+        <a href="#quote">Quote</a>
+      </div>
+    </div>
+    <div class="wrap footer__bottom muted">
+      © <span id="year"></span> D.A.T Towing &amp; Recovery. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Pre-filled SMS + Email templates
+    const phone = "2152000847";
+    const email = "OWTR2929@gmail.com";
+    const msg =
+`Quote request:
+Pickup location:
+Drop-off location (if towing):
+Vehicle (year/make/model):
+Service needed:
+Best callback number:`;
+
+    // iPhone-friendly SMS format: sms:NUMBER&body=...
+    const smsHref = `sms:${phone}&body=${encodeURIComponent(msg)}`;
+    document.getElementById("smsLink").setAttribute("href", smsHref);
+
+    const subject = "Quote Request - D.A.T Towing & Recovery";
+    const mailHref = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
+    document.getElementById("emailLink").setAttribute("href", mailHref);
+  </script>
+</body>
+</html>
